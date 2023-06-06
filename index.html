@@ -9,43 +9,85 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    <section id="header">
+        <nav class="navbar bg-padrao-light" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a id="logo-mb" class="navbar-brand" href="#">
+                    <img src="assents/img/MB_logomarca.png" alt="Bootstrap" width="50" height="50">
+                </a>
+                <span id="title-header" class="navbar-brand mb-0 h1 text-wrap text-center">Sistema de Transferência de Documentos na Web</span>
+                <a id="logo-sspm" class="navbar-brand" href="#">
+                    <img src="assents/img/sspm_logomarca.png" alt="Bootstrap" width="50" height="50">
+                </a>
+            </div>
+        </nav>
     </section>
+    <section id="menu">
+    <nav class="navbar navbar-expand-lg bg-padrao-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="inicio">Início</a>
+                    </li>                    
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle text-white" type="button" role="button" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cadastros
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cadastros/candidatos">Candidatos</a></li>
+                                <li><a class="dropdown-item" href="cadastros/concursos-publicos">Concurso Público</a></li>
+                                <li><a class="dropdown-item" href="cadastros/orel">OREL</a></li>
+                                <li class="dropend">
+                                    <button class="nav-link dropdown-toggle ms-2" role="button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tabelas
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="cadastros/tabelas/concursos">Concursos</a></li>
+                                        <li><a class="dropdown-item" href="cadastros/tabelas/evc">EVC</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="cadastros/usuarios">Usuários</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Uploads
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Importar</a></li>
+                                <li><a class="dropdown-item" href="#">Gerenciar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="sisdocweb/usuarios">Usuários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="sisdocweb/candidatos">Candiatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="sisdocweb/concursos">Concurso Público</a>
+                        </li>                    
+                </ul>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        CT George
+                    </a>
+                    <ul class="dropdown-menu dopdown-exit">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Alterar Senha</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item btn-sair hover">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
   </body>
 </html>
